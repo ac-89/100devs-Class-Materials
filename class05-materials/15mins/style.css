@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header,
+footer,
+section {
+  border: 2px solid black;
+  text-align: center;
+}
+
+header,
+footer {
+  height: 150px;
+  clear: both;
+}
+
+section {
+  width: 33.33%;
+  float: left;
+  height: 400px;
+}
+
+@media (max-width: 1000px) {
+  .col-1 {
+    width: 66.66%;
+  }
+  .col-2 {
+    width: 33.33%;
+  }
+
+  .col-3 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .col {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+  }
+}
