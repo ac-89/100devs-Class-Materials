@@ -1,0 +1,137 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body * {
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 100px;
+}
+
+nav > * {
+  float: left;
+  width: 10%;
+  display: block;
+}
+
+.header-left {
+  width: 45%;
+}
+
+.header-left * {
+  width: 40%;
+  display: block;
+}
+
+.header-left form {
+  width: 60%;
+}
+
+.header-left input {
+  width: 60%;
+}
+
+nav ul {
+  width: 40%;
+  float: right;
+  text-align: end;
+}
+
+nav img {
+  width: 10%;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  margin: 0 auto;
+  float: left;
+}
+
+section > * {
+  float: left;
+}
+
+.first-section img {
+  width: 30%;
+  margin-left: 200px;
+}
+
+.section-text {
+  width: 50%;
+  padding-top: 150px;
+  float: right;
+}
+
+.section-text ul {
+  list-style-type: none;
+}
+
+.section-text ul li {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  padding: 20px;
+}
+
+.about-section {
+  padding: 100px;
+  position: relative;
+}
+
+.about-section h2 {
+  position: absolute;
+  right: 50%;
+}
+
+.card {
+  width: 30%;
+  float: left;
+  margin: 40px 20px;
+}
+
+.card img {
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+  float: left;
+}
+
+.card h3 {
+  float: left;
+  clear: both;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
